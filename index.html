@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Incident Response Process Activity and Communication Data Log Dataset. Explore the dataset and provide feedback.">
     <title>IR Dataset</title>
     <style>
         body {
@@ -63,11 +64,60 @@
 </head>
 <body>
     <div class="container">
-        <h1>Incident Response ProcessLog Dataset</h1>
+        <h1>Incident Response Process Activity and Communication Data Log Dataset</h1>
         <p>The dataset includes detailed records of various Incident Response cases, corresponding actions, processes, and communication. Each record represents an individual incident and contains information relevant to the response actions and resolution of security incidents.</p>
         
         <h2>IR Process for a Phishing Incident</h2>
-        <img src="irprocessdiagram.png" alt="Process Flow Diagram">
+        <img src="irprocessdiagram.png" alt="Incident Response Process Flow Diagram">
+
+        <div class="section">
+            <h2>Purpose</h2>
+            <p>This dataset is designed to advance the field of Incident Response (IR) by providing a comprehensive and realistic set of records related to various IR activities. It serves multiple purposes:</p>
+            <ul>
+                <li><strong>Training Purposes:</strong> By offering a diverse range of incident scenarios and corresponding data, this dataset is invaluable for training IR professionals. It helps in understanding and practicing response strategies in simulated, but realistic environments.</li>
+                <li><strong>Analysis of Past Incidents:</strong> The dataset includes historical incident data that can be analyzed to identify trends, common attack vectors, and response efficacy. This analysis aids in refining existing strategies and preparing for future incidents.</li>
+                <li><strong>Improving Response Strategies:</strong> By integrating various types of incident data, communication logs, and response actions, this dataset allows organizations to test and enhance their incident response plans and strategies.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Structure</h2>
+            <p>The dataset is meticulously organized to provide a detailed view of IR processes. It includes:</p>
+            <ul>
+                <li><strong>Types of Incidents:</strong> Various categories of incidents, such as phishing attacks, malware infections, and insider threats.</li>
+                <li><strong>Data Fields:</strong> Key fields include the time of the incident, type of attack, response actions, communication logs, and resolution details.</li>
+                <li><strong>Number of Cases:</strong> The dataset comprises numerous cases, each representing a unique incident scenario with detailed records of actions taken and communications exchanged.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Features</h2>
+            <p>Important fields within the dataset include:</p>
+            <ul>
+                <li><strong>Time of Incident:</strong> The timestamp when the incident was detected and when key actions were taken.</li>
+                <li><strong>Type of Attack:</strong> Classification of the incident (e.g., phishing, ransomware, DDoS attack).</li>
+                <li><strong>Response Actions:</strong> Detailed descriptions of the actions taken in response to the incident.</li>
+                <li><strong>Communication Logs:</strong> Textual records of communication between team members during the incident.</li>
+                <li><strong>Resolution Details:</strong> Information on how the incident was resolved, including lessons learned.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Anonymization</h2>
+            <p>The dataset provides textual data that has been anonymized to protect sensitive information while ensuring that it accurately represents real-world IR processes. This anonymization allows for the inclusion of comprehensive incident and communication data without exposing identifiable details.</p>
+        </div>
+
+        <div class="section">
+            <h2>Use Case</h2>
+            <p>This dataset is highly beneficial for IR professionals and researchers in several ways:</p>
+            <ul>
+                <li><strong>Research:</strong> Enables researchers to study incident response patterns and effectiveness.</li>
+                <li><strong>Training:</strong> Provides a realistic simulation environment for training IR teams, helping them to prepare for various scenarios.</li>
+                <li><strong>Testing Tools:</strong> Useful for testing and validating new IR tools and technologies in a controlled, data-rich setting.</li>
+                <li><strong>Understanding Patterns:</strong> Facilitates the identification of trends and patterns in incident response, which can inform future strategies and improvements.</li>
+            </ul>
+            <p>To ensure the dataset's realism and applicability, we employed advanced prompting techniques to generate artificial datasets of IR activities and communications. We fine-tuned ChatGPT to control various aspects of the generated data, ensuring it mirrors actual IR scenarios. Additional fields were incorporated based on sample IR playbooks and chat logs from organizations, enriching the dataset's depth. A survey conducted among IR professionals confirmed the dataset’s effectiveness in reflecting realistic scenarios and its utility for training and research.</p>
+        </div>
 
         <div class="section">
             <h2>Dataset</h2>

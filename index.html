@@ -64,11 +64,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>Incident Response Process Activity and Communication Data Log Dataset</h1>
+        <h1>Incident Response Process Log Dataset</h1>
+        <p>synthetic Incident Response Process Activities and Communication data Log dataset generated using an LLM. An exisiting anonymised publicly available Incident managament Process Log dataset was augmented to include additional fields and textual data. </p>p
         <p>The dataset includes detailed records of various Incident Response cases, corresponding actions, processes, and communication. Each record represents an individual incident and contains information relevant to the response actions and resolution of security incidents.</p>
-        
-        <h2>IR Process for a Phishing Incident</h2>
-        <img src="irprocessdiagram.png" alt="Incident Response Process Flow Diagram">
+
 
         <div class="section">
             <h2>Purpose</h2>
@@ -90,34 +89,21 @@
             </ul>
         </div>
 
+    
         <div class="section">
-            <h2>Features</h2>
-            <p>Important fields within the dataset include:</p>
-            <ul>
-                <li><strong>Time of Incident:</strong> The timestamp when the incident was detected and when key actions were taken.</li>
-                <li><strong>Type of Attack:</strong> Classification of the incident (e.g., phishing, ransomware, DDoS attack).</li>
-                <li><strong>Response Actions:</strong> Detailed descriptions of the actions taken in response to the incident.</li>
-                <li><strong>Communication Logs:</strong> Textual records of communication between team members during the incident.</li>
-                <li><strong>Resolution Details:</strong> Information on how the incident was resolved, including lessons learned.</li>
-            </ul>
+            <h2>Sample Incident Instance Breakdown</h2>
+            <p>Each Incident Response (IR) case instance in the dataset is structured to represent a complete IR process. The following breakdown illustrates how an IR case from one of the dataset instances was detected, handled, and resolved, with detailed information about every step in the response.</p>
+
+         <li><strong>Incident Details</li>
+            
+        
+       <li><strong>IR Process Diagram for a Phishing Incident</li>
+        <img src="irprocessdiagram.png" alt="Incident Response Process Flow Diagram">
+        
         </div>
 
-        <div class="section">
-            <h2>Anonymization</h2>
-            <p>The dataset provides textual data that has been anonymized to protect sensitive information while ensuring that it accurately represents real-world IR processes. This anonymization allows for the inclusion of comprehensive incident and communication data without exposing identifiable details.</p>
-        </div>
-
-        <div class="section">
-            <h2>Use Case</h2>
-            <p>This dataset is highly beneficial for IR professionals and researchers in several ways:</p>
-            <ul>
-                <li><strong>Research:</strong> Enables researchers to study incident response patterns and effectiveness.</li>
-                <li><strong>Training:</strong> Provides a realistic simulation environment for training IR teams, helping them to prepare for various scenarios.</li>
-                <li><strong>Testing Tools:</strong> Useful for testing and validating new IR tools and technologies in a controlled, data-rich setting.</li>
-                <li><strong>Understanding Patterns:</strong> Facilitates the identification of trends and patterns in incident response, which can inform future strategies and improvements.</li>
-            </ul>
-            <p>To ensure the dataset's realism and applicability, we employed advanced prompting techniques to generate artificial datasets of IR activities and communications. We fine-tuned ChatGPT to control various aspects of the generated data, ensuring it mirrors actual IR scenarios. Additional fields were incorporated based on sample IR playbooks and chat logs from organizations, enriching the dataset's depth. A survey conducted among IR professionals confirmed the dataset’s effectiveness in reflecting realistic scenarios and its utility for training and research.</p>
-        </div>
+        
+        
 
         <div class="section">
             <h2>Dataset</h2>

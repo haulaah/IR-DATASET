@@ -9,7 +9,9 @@ The dataset includes detailed records of various Incident Response cases, corres
 ### Field Description
 
 number: incident identifier;
+
 incident state: eight levels controlling the incident management process transitions from opening until closing the case;
+
 active: boolean attribute that shows whether the record is active or closed/canceled;
 reassignment_count: number of times the incident has the group or the support analysts changed;
 reopen_count: number of times the incident resolution was rejected by the caller;

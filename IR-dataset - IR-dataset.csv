@@ -1,0 +1,149 @@
+number,incidentstate,active,reassignment_count,reopen_count,sys_mod_count,made_sla,caller_id,opened_by,opened_at,sys_created_by,sys_created_at,sys_updated_by,sys_updated_at,contact_type,category,subcategory,u_symptom,impact,urgency,priority,assignment_group,assigned_to,knowledge,u_priority_confirmation,notify,rfc,Case ID,Case Title,Creation Date,Description,Case Tasks,Analyst Investigative Activities / Observables,Ticketing System Chat Log,Ticketing system Chat response Data - Keywords,Chat Response Overall Sentiment Determination,Event ID,Distribution,Event Information (Description),Threat Level,Event Attributes,close_code,resolved_by,resolved_at,closed_at
+INC0012345,Resolved,FALSE,2,1,7,TRUE,user_123,user_456,01/06/2024 09:15,user_456,01/06/2024 09:20,user_789,02/06/2024 14:30,Email,Security,Phishing,Suspicious email received,1,1,1,Security_Incident_Response_Team,user_789,TRUE,TRUE,Email,RFC001234,CASE001,Phishing Attack Detected,01/06/2024 09:15,Suspicious email detected  requiring immediate attention.,"[{""Case Tasks Title"": ""Email Filtering"", ""Case Task Start Date"": ""01/06/2024 09:30"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{'email': 'suspicious@example.com', 'reason': 'unknown sender'}""},
+
+ {""Case Tasks Title"": ""SOC Notification"", ""Case Task Start Date"": ""01/06/2024 09:35"", ""Case Task Assignee"": ""user_456"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""15 minutes"", ""Case Attribute Data"": ""{'alert_details': 'Suspicious email detected with unknown sender.'}""}, 
+
+{""Case Tasks Title"": ""Quarantine Email"", ""Case Task Start Date"": ""01/06/2024 09:40"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""20 minutes"", ""Case Attribute Data"": ""{'email_id': '12345', 'status': 'quarantined'}""}, 
+
+{""Case Tasks Title"": ""Endpoint Isolation"", ""Case Task Start Date"": ""01/06/2024 09:45"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""40 minutes"", ""Case Attribute Data"": ""{'endpoints': ['PC001', 'PC002'], 'status': 'isolated'}""}, 
+
+{""Case Tasks Title"": ""Data Gathering"", ""Case Task Start Date"": ""01/06/2024 10:00"", ""Case Task Assignee"": ""user_456"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{'data_collected': 'sender_info, email_content, IP_address'}""},
+
+{""Case Tasks Title"": ""Email Removal"", ""Case Task Start Date"": ""01/06/2024 10:15"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""25 minutes"", ""Case Attribute Data"": ""{'removed_emails': ['suspicious@example.com']}""} ,
+
+ {""Case Tasks Title"": ""Apply Patches"", ""Case Task Start Date"": ""01/06/2024 10:45"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{'patches_applied': 'Security_patch_1, Security_patch_2'}""}, 
+
+{""Case Tasks Title"": ""User Guidance"", ""Case Task Start Date"": ""01/06/2024 11:45"", ""Case Task Assignee"": ""user_456"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{'guidance_provided': 'Email recognition and reporting tips'}""},
+
+ {""Case Tasks Title"": ""Filtering Criteria Review"", ""Case Task Start Date"": ""01/06/2024 12:15"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""45 minutes"", ""Case Attribute Data"": ""{'new_criteria': 'Updated filters to include recent phishing patterns'}""},
+
+ {""Case Tasks Title"": ""Incident Report"", ""Case Task Start Date"": ""01/06/2024 13:00"", ""Case Task Assignee"": ""user_456"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{'report_summary': 'Phishing attack successfully contained and remediated.'}""}]","
+""[{\""Analysis Type\"":\""File\"",\""Analysis ID\"":\""file-2024-001\"",\""Timestamp\"":\""2024-08-12 14:32:30 UTC\"",\""Data Value\"":\""MD5 Hash: e99a18c428cb38d5f260853678922e03\"",\""Details\"":\""Detected by 7/60 antivirus engines, flagged as Trojan:Win32/Generic and Ransomware:Win32/Locky\"",\""Status\"":\""Success\""},
+
+{\""Analysis Type\"":\""URL\"",\""Analysis ID\"":\""url-2024-002\"",\""Timestamp\"":\""2024-08-12 14:33:00 UTC\"",\""Data Value\"":\""URL: http://malicious-site.com\"",\""Details\"":\""Reputation score is 0 (High risk), associated with known phishing campaigns\"",\""Status\"":\""Success\""},
+
+{\""Analysis Type\"":\""IP Address\"",\""Analysis ID\"":\""ip-2024-003\"",\""Timestamp\"":\""2024-08-12 14:33:30 UTC\"",\""Data Value\"":\""IP Address: 192.168.1.100\"",\""Details\"":\""IP is listed in threat intelligence feeds as associated with phishing activities, has been involved in 5 previous incidents\"",\""Status\"":\""Success\""},
+
+{\""Analysis Type\"":\""Domain\"",\""Analysis ID\"":\""domain-2024-004\"",\""Timestamp\"":\""2024-08-12 14:34:00 UTC\"",\""Data Value\"":\""Domain: example-malicious.com\"",\""Details\"":\""Domain is associated with multiple known phishing campaigns, reputation score is 0 (High risk)\"",\""Status\"":\""Success\""},
+
+{\""Analysis Type\"":\""Email Header\"",\""Analysis ID\"":\""email-2024-005\"",\""Timestamp\"":\""2024-08-12 14:34:30 UTC\"",\""Data Value\"":\""Header Analysis: Received: from mail.example.com\"",\""Details\"":\""Header indicates the email was sent from a known suspicious IP, associated with previous phishing attempts\"",\""Status\"":\""Success\""},
+
+{\""Analysis Type\"":\""Process\"",\""Analysis ID\"":\""process-2024-006\"",\""Timestamp\"":\""2024-08-12 14:35:00 UTC\"",\""Data Value\"":\""Process ID: 1234, Process Name: suspicious.exe\"",\""Details\"":\""Process is flagged by multiple security tools as malicious, showing behavior consistent with ransomware\"",\""Status\"":\""Success\""}","User_789 [09:15 AM]:
+""Received a report of a suspicious email from user_123. The email seems to be a phishing attempt. We should start by filtering and quarantining it immediately.""
+User_456 [09:20 AM]:
+""Alerting the SOC team now. The email has been flagged as containing potentially malicious links. Will update once they respond.""
+User_789 [09:30 AM]:
+""Email has been quarantined. I’ve initiated a malware scan on the affected endpoints. It’s quite a frustrating issue, but we should resolve it quickly.""
+User_456 [09:45 AM]:
+""Confirmed, the malware scan is in progress. The situation is critical, but I’m confident we’ll handle it effectively. Let’s keep the communication flowing.""
+User_789 [10:00 AM]:
+""Collected data on the email sender and IP address. The sender is flagged in our threat database. The scan didn’t find any immediate threats on the endpoints, but we’re still monitoring.""
+User_456 [10:15 AM]:
+""Removing the phishing email from all inboxes. Users are notified with guidance on recognizing phishing attempts. The support from the team has been excellent.""
+User_789 [10:30 AM]:
+""Applied security patches to address potential vulnerabilities. This should mitigate similar threats in the future. Overall, the situation was managed well, despite the initial difficulties.""
+User_456 [11:00 AM]:
+""Reviewed filtering criteria to include the new phishing patterns. The incident is resolved quickly. The quick response and team support were crucial.""
+User_789 [11:30 AM]:
+""Incident report is being drafted. Summary: Phishing attack successfully contained with no major impact. We acted swiftly and effectively.""
+User_456 [12:00 PM]:
+""Final report completed and shared. Good job to everyone involved. It was a challenging situation, but we resolved it efficiently.""
+","[""phishing"", ""email quarantine"", ""malware scan"", ""unusual domain"", ""unexpected activity"", ""new threat"", ""sensitive files"", ""network activity"", ""security patches"", ""filtering rules"", ""larger campaign"", ""new findings""]",Neutral Sentiment,101,Organization only,Phishing attempt detected,High,"{'email_subject': 'Urgent Request', 'email_sender': 'unknown@example.com'} ",Phishing_Resolved,user_789,02/06/2024 14:00,02/06/2024 14:30
+INC0012346,Resolved,FALSE,1,0,5,TRUE,user_789,user_456,01/07/2024 10:00,user_456,01/07/2024 10:05,user_123,02/07/2024 12:15,Phone,Malware,Ransomware,Suspicious file activity detected,2,2,2,Malware_Analysis_Team,user_123,TRUE,TRUE,Phone,RFC001235,CASE002,Ransomware Attack on Critical Server,01/07/2024 10:00,Ransomware detected on a critical server requiring immediate containment.,"[{""Case Tasks Title"": ""Malware Analysis"", ""Case Task Start Date"": ""01/07/2024 10:15"", ""Case Task Assignee"": ""user_123"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""45 minutes"", ""Case Attribute Data"": ""{'file_name': 'ransomware.exe', 'MD5_hash': 'e99a18c428cb38d5f260853678922e03'}""},
+
+{""Case Tasks Title"": ""Server Isolation"", ""Case Task Start Date"": ""01/07/2024 11:00"", ""Case Task Assignee"": ""user_123"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{'server_id': 'SRV001', 'status': 'isolated'}""},
+
+{""Case Tasks Title"": ""Data Recovery"", ""Case Task Start Date"": ""01/07/2024 11:30"", ""Case Task Assignee"": ""user_456"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{'backup_used': 'Backup_01_07_2024'}""},
+
+{""Case Tasks Title"": ""User Notification"", ""Case Task Start Date"": ""01/07/2024 12:30"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""15 minutes"", ""Case Attribute Data"": ""{'affected_users': 100, 'notification_type': 'email'}""},
+
+{""Case Tasks Title"": ""Patch Deployment"", ""Case Task Start Date"": ""01/07/2024 12:45"", ""Case Task Assignee"": ""user_123"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{'patches_deployed': 'Critical_Patch_1, Critical_Patch_2'}""},
+
+{""Case Tasks Title"": ""Incident Report"", ""Case Task Start Date"": ""01/07/2024 13:45"", ""Case Task Assignee"": ""user_456"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{'report_summary': 'Ransomware contained, data restored, and patches applied.'}""}]","
+""[{\""Analysis Type\"":\""File\"",\""Analysis ID\"":\""file-2024-007\"",\""Timestamp\"":\""2024-07-12 15:32:30 UTC\"",\""Data Value\"":\""SHA-256 Hash: 2c26b46b68ffc68ff99b453c1d30413413422c1f34536cb8e7dfb1e2ae69b930\"",\""Details\"":\""Detected by 45/60 antivirus engines, flagged as Ransomware:Win32/Generic and Ransomware:Win32/Locky\"",\""Status\"":\""Success\""},
+
+{\""Analysis Type\"":\""URL\"",\""Analysis ID\"":\""url-2024-008\"",\""Timestamp\"":\""2024-07-12 15:33:00 UTC\"",\""Data Value\"":\""URL: http://ransom-site.com\"",\""Details\"":\""Reputation score is 0 (High risk), associated with known ransomware campaigns\"",\""Status\"":\""Success\""},
+
+{\""Analysis Type\"":\""IP Address\"",\""Analysis ID\"":\""ip-2024-009\"",\""Timestamp\"":\""2024-07-12 15:33:30 UTC\"",\""Data Value\"":\""IP Address: 192.168.2.200\"",\""Details\"":\""IP is listed in threat intelligence feeds as associated with ransomware activities, has been involved in 3 previous incidents\"",\""Status\"":\""Success\""},
+
+{\""Analysis Type\"":\""Domain\"",\""Analysis ID\"":\""domain-2024-010\"",\""Timestamp\"":\""2024-07-12 15:34:00 UTC\"",\""Data Value\"":\""Domain: ransomware-malicious.com\"",\""Details\"":\""Domain is associated with multiple known ransomware campaigns, reputation score is 0 (High risk)\"",\""Status\"":\""Success\""},
+
+{\""Analysis Type\"":\""Process\"",\""Analysis ID\"":\""process-2024-011\"",\""Timestamp\"":\""2024-07-12 15:35:00 UTC\"",\""Data Value\"":\""Process ID: 5678, Process Name: encryptor.exe\"",\""Details\"":\""Process is flagged by multiple security tools as malicious, showing behavior consistent with ransomware encryption activity\"",\""Status\"":\""Success\""}]""", ,"[""ransomware"", ""server isolation"", ""data recovery"", ""malicious file"", ""suspicious domain"", ""encryption activity"", ""critical patches"", ""user notification"", ""incident report"", ""restoration plan""]",Neutral Sentiment,107,Organization only,Ransomware attack on critical infrastructure,High,"{'file_name': 'ransomware.exe', 'server_id': 'SRV001'}",Malware_Resolved,user_123,02/07/2024 12:00,02/07/2024 12:30
+INC0012347,Resolved,FALSE,3,1,9,TRUE,user_456,user_789,02/08/2024 11:00,user_789,02/08/2024 11:05,user_789,03/08/2024 16:20,Email,Denial of Service,DDoS,High volume of traffic causing disruption,3,3,3,Network_Security_Team,user_456,TRUE,TRUE,Email,RFC001236,CASE003,DDoS Attack Mitigation,02/08/2024 11:00,Denial of Service attack detected on public-facing web application.,"[{""Case Tasks Title"": ""Traffic Filtering"", ""Case Task Start Date"": ""02/08/2024 11:15"", ""Case Task Assignee"": ""user_456"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{'filtering_rules': 'Block IP range 192.168.1.0/24'}""},
+
+{""Case Tasks Title"": ""Load Balancing"", ""Case Task Start Date"": ""02/08/2024 11:45"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{'servers_involved': ['LB001', 'LB002']}""},
+
+{""Case Tasks Title"": ""Traffic Analysis"", ""Case Task Start Date"": ""02/08/2024 12:45"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""45 minutes"", ""Case Attribute Data"": ""{'analyzed_traffic': '50GB over 30 minutes'}""},
+
+{""Case Tasks Title"": ""IP Block"", ""Case Task Start Date"": ""02/08/2024 13:30"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""15 minutes"", ""Case Attribute Data"": ""{'blocked_ips': ['192.168.1.100', '192.168.1.101']}""},
+
+{""Case Tasks Title"": ""Web Application Firewall Tuning"", ""Case Task Start Date"": ""02/08/2024 13:45"", ""Case Task Assignee"": ""user_456"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{'waf_rules_updated': 'New DDoS mitigation rules'}""},
+
+{""Case Tasks Title"": ""Monitoring Setup"", ""Case Task Start Date"": ""02/08/2024 14:45"", ""Case Task Assignee"": ""user_456"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{'monitoring_tools': 'Enabled additional DDoS monitoring on all public-facing applications'}""},
+
+{""Case Tasks Title"": ""Incident Report"", ""Case Task Start Date"": ""02/08/2024 15:15"", ""Case Task Assignee"": ""user_456"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{'report_summary': 'DDoS attack mitigated with traffic filtering, load balancing, and WAF tuning.'}""}]","
+""[{\""Analysis Type\"":\""IP Address\"",\""Analysis ID\"":\""ip-2024-012\"",\""Timestamp\"":\""2024-08-12 14:33:30 UTC\"",\""Data Value\"":\""IP Address: 192.168.1.100\"",\""Details\"":\""IP is listed in threat intelligence feeds as associated with DDoS activities, has been involved in 7 previous incidents\"",\""Status\"":\""Success\""}]", ,"
+[""ddos attack"", ""high traffic"", ""ip blocking"", ""waf tuning"", ""load balancing"", ""monitoring setup"", ""network disruption"", ""traffic filtering"", ""mitigation steps"", ""incident report""]",Neutral Sentiment,115,Organization only,DDoS attack detected ,High,"{'traffic_type': 'SYN flood', 'attack_duration': '2 hours'}",DDoS_Mitigated,user_789,03/08/2024 16:00,03/08/2024 16:20
+INC0012348,Resolved,FALSE,4,0,8,TRUE,user_789,user_456,03/08/2024 14:30,user_456,03/08/2024 14:35,user_123,03/08/2024 17:45,Email,Data Breach,Unauthorized Access,Unusual access patterns detected,1,1,1,Incident_Response_Team,user_123,TRUE,TRUE,Email,RFC001237,CASE004,Data Breach Investigation,03/08/2024 14:30,Unauthorized access to sensitive data detected on server.,"[{""Case Tasks Title"": ""Access Logs Review"", ""Case Task Start Date"": ""03/08/2024 14:45"", ""Case Task Assignee"": ""user_123"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{'reviewed_logs': 'access_log_08032024.txt'}""},
+
+{""Case Tasks Title"": ""User Account Suspension"", ""Case Task Start Date"": ""03/08/2024 15:15"", ""Case Task Assignee"": ""user_456"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""15 minutes"", ""Case Attribute Data"": ""{'suspended_accounts': ['user001']}""},
+
+{""Case Tasks Title"": ""Sensitive Data Audit"", ""Case Task Start Date"": ""03/08/2024 15:30"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""45 minutes"", ""Case Attribute Data"": ""{'audited_files': 'financial_records_2024.xlsx'}""},
+
+{""Case Tasks Title"": ""Vulnerability Patch"", ""Case Task Start Date"": ""03/08/2024 16:15"", ""Case Task Assignee"": ""user_123"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{'patched_vulnerability': 'CVE-2024-1234'}""},
+
+{""Case Tasks Title"": ""Security Policy Update"", ""Case Task Start Date"": ""03/08/2024 17:15"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{'updated_policies': 'Access control policy v1.1'}""},
+
+{""Case Tasks Title"": ""Incident Report"", ""Case Task Start Date"": ""03/08/2024 17:45"", ""Case Task Assignee"": ""user_456"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""45 minutes"", ""Case Attribute Data"": ""{'report_summary': 'Unauthorized access identified and mitigated.'}""}]","
+""[{\""Analysis Type\"":\""File\"",\""Analysis ID\"":\""file-2024-012\"",\""Timestamp\"":\""2024-08-12 16:00:00 UTC\"",\""Data Value\"":\""SHA-1 Hash: b26c8db0c4e2c9b01b7c24c137918d8f3540dd92\"",\""Details\"":\""Detected by 25/60 antivirus engines, flagged as Trojan:Win32/Generic\"",\""Status\"":\""Success\""},
+
+{\""Analysis Type\"":\""Network Activity\"",\""Analysis ID\"":\""network-2024-013\"",\""Timestamp\"":\""2024-08-12 16:05:00 UTC\"",\""Data Value\"":\""IP Address: 10.0.0.1\"",\""Details\"":\""IP is listed in threat intelligence feeds as associated with unauthorized access activities, has been involved in 2 previous incidents\"",\""Status\"":\""Success\""},
+
+{\""Analysis Type\"":\""Process\"",\""Analysis ID\"":\""process-2024-014\"",\""Timestamp\"":\""2024-08-12 16:10:00 UTC\"",\""Data Value\"":\""Process ID: 7890, Process Name: unauthorized_access.exe\"",\""Details\"":\""Process is flagged by multiple security tools as malicious, showing behavior consistent with unauthorized access activities\"",\""Status\"":\""Success\""}]""", ,"[""unauthorized access"", ""data breach"", ""sensitive data"", ""vulnerability patch"", ""security policy"", ""log review"", ""user account"", ""incident report""]",Neutral Sentiment,129,Organization only,Unauthorized access to sensitive data,High,"{'unauthorized_account': 'user001', 'access_time': '03/08/2024 14:00'}",Breach_Resolved,user_123,04/08/2024 10:00,04/08/2024 10:30
+INC0012348,Resolved,FALSE,2,0,6,TRUE,user_321,user_654,04/08/2024 09:30,user_654,04/08/2024 09:35,user_654,04/08/2024 14:20,Email,Malware,Adware,Unwanted pop-up ads on multiple user systems,2,2,2,Endpoint_Protection_Team,user_321,TRUE,TRUE,Email,RFC001237,CASE004,Adware Infection on User Systems,04/08/2024 09:30,Multiple user systems affected by adware displaying unwanted pop-ups.,"[{""Case Tasks Title"": ""Adware Detection"", ""Case Task Start Date"": ""04/08/2024 09:45"", ""Case Task Assignee"": ""user_321"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{'detection_tool': 'Anti-Adware Tool X', 'adware_signatures': ['Adware.Yontoo', 'Adware.ShopAtHome']}""},
+
+{""Case Tasks Title"": ""System Scanning"", ""Case Task Start Date"": ""04/08/2024 10:15"", ""Case Task Assignee"": ""user_654"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""45 minutes"", ""Case Attribute Data"": ""{'systems_scanned': 20, 'infections_found': 15}""},
+
+{""Case Tasks Title"": ""Adware Removal"", ""Case Task Start Date"": ""04/08/2024 11:00"", ""Case Task Assignee"": ""user_654"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{'removal_tool': 'Adware Remover Pro', 'systems_cleaned': 15}""},
+
+{""Case Tasks Title"": ""User Education"", ""Case Task Start Date"": ""04/08/2024 12:00"", ""Case Task Assignee"": ""user_321"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{'topics_covered': ['Avoiding malicious downloads', 'Recognizing adware symptoms']}""},
+
+{""Case Tasks Title"": ""System Monitoring"", ""Case Task Start Date"": ""04/08/2024 12:30"", ""Case Task Assignee"": ""user_654"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{'monitoring_duration': '24 hours', 'no_reinfection_detected': TRUE}""},
+
+{""Case Tasks Title"": ""Incident Report"", ""Case Task Start Date"": ""04/08/2024 13:00"", ""Case Task Assignee"": ""user_321"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{'report_summary': 'Adware infection detected, removed, and systems monitored with no reinfections.'}""}]","
+""[{\""Analysis Type\"":\""File\"",\""Analysis ID\"":\""file-2024-013\"",\""Timestamp\"":\""2024-08-12 10:15:00 UTC\"",\""Data Value\"":\""File Name: adware_installer.exe\"",\""Details\"":\""Detected by 30/50 antivirus engines, flagged as Adware:Win32/AdInstaller and Adware:Win32/InstallCore\"",\""Status\"":\""Success\""},
+
+{\""Analysis Type\"":\""URL\"",\""Analysis ID\"":\""url-2024-014\"",\""Timestamp\"":\""2024-08-12 10:30:00 UTC\"",\""Data Value\"":\""URL: http://adware-site.com\"",\""Details\"":\""Reputation score is 0 (High risk), associated with known adware campaigns\"",\""Status\"":\""Success\""}]",  ,"
+[""adware detection"", ""pop-up ads"", ""system scanning"", ""adware removal"", ""user education"", ""system monitoring"", ""incident report"", ""malicious file"", ""suspicious URL""]",Negative Sentiment,131,Organization only,Adware infection detected and removed on user systems,Medium,"{'adware_signatures': ['Adware.Yontoo', 'Adware.ShopAtHome'], 'systems_infected': 15}",Malware_Resolved,user_654,04/08/2024 14:00,04/08/2024 14:20
+INC0012349,Resolved,FALSE,2,1,6,TRUE,user_123,user_789,04/09/2024 13:20,user_789,04/09/2024 13:25,user_456,05/09/2024 15:40,Phone,Insider Threat,Data Exfiltration,Suspicious data transfer detected,2,2,2,Threat_Hunting_Team,user_456,TRUE,TRUE,Phone,RFC001238,CASE005,Insider Threat Data Exfiltration,04/09/2024 13:20,Suspicious data transfer from internal network to external IP detected.,"[{""Case Tasks Title"": ""Data Transfer Analysis"", ""Case Task Start Date"": ""04/09/2024 13:30"", ""Case Task Assignee"": ""user_456"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{'data_transferred': '500MB', 'external_IP': '192.168.3.200'}""},
+
+{""Case Tasks Title"": ""User Account Review"", ""Case Task Start Date"": ""04/09/2024 14:00"", ""Case Task Assignee"": ""user_123"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""20 minutes"", ""Case Attribute Data"": ""{'account_reviewed': 'user002'}""},
+
+{""Case Tasks Title"": ""Data Retrieval"", ""Case Task Start Date"": ""04/09/2024 14:20"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""45 minutes"", ""Case Attribute Data"": ""{'retrieved_data': 'confidential_files.zip'}""},
+
+{""Case Tasks Title"": ""Network Traffic Monitoring"", ""Case Task Start Date"": ""04/09/2024 15:05"", ""Case Task Assignee"": ""user_123"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{'monitored_traffic': '10GB over 1 hour'}""},
+
+{""Case Tasks Title"": ""User Account Lock"", ""Case Task Start Date"": ""04/09/2024 16:05"", ""Case Task Assignee"": ""user_456"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""10 minutes"", ""Case Attribute Data"": ""{'locked_account': 'user002'}""},
+
+{""Case Tasks Title"": ""Incident Report"", ""Case Task Start Date"": ""04/09/2024 16:15"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{'report_summary': 'Insider threat detected, data exfiltration mitigated.'}""}]","
+""[{\""Analysis Type\"":\""File Transfer\"",\""Analysis ID\"":\""file-2024-015\"",\""Timestamp\"":\""2024-08-12 18:00:00 UTC\"",\""Data Value\"":\""SHA-256 Hash: 5d41402abc4b2a76b9719d911017c592\"",\""Details\"":\""Detected suspicious file transfer activity to external IP address associated with data exfiltration activities\"",\""Status\"":\""Success\""},
+
+{\""Analysis Type\"":\""IP Address\"",\""Analysis ID\"":\""ip-2024-016\"",\""Timestamp\"":\""2024-08-12 18:05:00 UTC\"",\""Data Value\"":\""IP Address: 192.168.3.200\"",\""Details\"":\""IP is listed in threat intelligence feeds as associated with data exfiltration activities, has been involved in 2 previous incidents\"",\""Status\"":\""Success\""},
+
+{\""Analysis Type\"":\""Network Activity\"",\""Analysis ID\"":\""network-2024-017\"",\""Timestamp\"":\""2024-08-12 18:10:00 UTC\"",\""Data Value\"":\""External IP Address: 192.168.3.200\"",\""Details\"":\""IP is flagged for suspicious data transfer activities, associated with known insider threat campaigns\"",\""Status\"":\""Success\""}]""", ,"[""insider threat"", ""data exfiltration"", ""suspicious transfer"", ""network monitoring"", ""user account"", ""incident report""]",Negative Sentiment,140,Organization only,Suspicious data transfer detected,High,"{'file_transferred': 'confidential_files.zip', 'user_involved': 'user002'}",Insider_Threat_Resolved,user_789,05/09/2024 15:00,05/09/2024 15:40
+INC0012350,Resolved,FALSE,1,0,5,TRUE,user_456,user_123,05/10/2024 11:45,user_123,05/10/2024 11:50,user_789,06/10/2024 13:15,Email,Malware,Ransomware,Unusual encryption activities detected on multiple devices,1,1,2,Security_Incident_Response_Team,user_789,TRUE,TRUE,Email,RFC001239,CASE006,Ransomware Attack Containment,05/10/2024 11:45,Ransomware attack detected encrypting files on multiple endpoints.,"[{""Case Tasks Title"": ""File Encryption Analysis"", ""Case Task Start Date"": ""05/10/2024 12:00"", ""Case Task Assignee"": ""user_456"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{'encrypted_files': 'document1.docx, spreadsheet1.xlsx'}""},
+
+{""Case Tasks Title"": ""Endpoint Isolation"", ""Case Task Start Date"": ""05/10/2024 12:30"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""45 minutes"", ""Case Attribute Data"": ""{'isolated_endpoints': ['PC003', 'PC004']}""},
+
+{""Case Tasks Title"": ""Ransom Note Analysis"", ""Case Task Start Date"": ""05/10/2024 13:15"", ""Case Task Assignee"": ""user_123"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{'ransom_note': 'Pay $500 in Bitcoin to decrypt files'}""},
+
+{""Case Tasks Title"": ""Decryption Attempt"", ""Case Task Start Date"": ""05/10/2024 14:15"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{'decryption_tool': 'Tool_123', 'status': 'Partial success'}""},
+
+{""Case Tasks Title"": ""Data Recovery"", ""Case Task Start Date"": ""05/10/2024 14:45"", ""Case Task Assignee"": ""user_456"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{'recovered_files': 'backup_files.zip'}""},
+
+{""Case Tasks Title"": ""Incident Report"", ""Case Task Start Date"": ""05/10/2024 15:45"", ""Case Task Assignee"": ""user_123"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{'report_summary': 'Ransomware attack contained and data partially recovered.'}""}]","
+""[{\""Analysis Type\"":\""Process\"",\""Analysis ID\"":\""process-2024-018\"",\""Timestamp\"":\""2024-08-12 19:00:00 UTC\"",\""Data Value\"":\""Process ID: 5678, Process Name: ransomware.exe\"",\""Details\"":\""Process is flagged by multiple security tools as malicious, showing behavior consistent with ransomware activities\"",\""Status\"":\""Success\""},
+
+{\""Analysis Type\"":\""File\"",\""Analysis ID\"":\""file-2024-019\"",\""Timestamp\"":\""2024-08-12 19:05:00 UTC\"",\""Data Value\"":\""MD5 Hash: abcd1234efgh5678ijkl9101mnopqrs2\"",\""Details\"":\""Detected by 40/60 antivirus engines, flagged as Ransomware:Win32/Generic\"",\""Status\"":\""Success\""},
+
+{\""Analysis Type\"":\""Network Activity\"",\""Analysis ID\"":\""network-2024-020\"",\""Timestamp\"":\""2024-08-12 19:10:00 UTC\"",\""Data Value\"":\""IP Address: 192.168.5.100\"",\""Details\"":\""IP is listed in threat intelligence feeds as associated with ransomware command-and-control activities, has been involved in multiple previous incidents\"",\""Status\"":\""Success\""}]""", ,"[""ransomware attack"", ""file encryption"", ""data recovery"", ""network isolation"", ""process analysis"", ""incident report""]",Negative Sentiment,142,Organization only,Ransomware attack detected,High,"{'encrypted_files': 'document1.docx, spreadsheet1.xlsx', 'ransom_note': 'Pay $500 in Bitcoin'}",Ransomware_Resolved,user_456,06/10/2024 13:00,06/10/2024 13:15

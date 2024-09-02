@@ -3,25 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IR Dataset </title>
+    <title>IR Dataset</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        h1, h2 {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
             color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #0056b3;
+            margin-top: 30px;
+        }
+        p {
+            margin: 10px 0;
+            line-height: 1.6;
         }
         img {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto;
+            margin: 20px 0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -34,8 +66,8 @@
         <img src="irprocessdiagram.png" alt="Process Flow Diagram">
 
         <h2>Survey</h2>
-        <p> You can fill out the questionnaire </p>
-        <a href="https://example.com/survey" target="_blank">Take the Survey</a>
+        <p>Your feedback is important to us. Please take a moment to fill out our survey based on your observations of the dataset and process diagram.</p>
+        <a href="https://example.com/survey" target="_blank" class="button">Take the Survey</a>
     </div>
 </body>
 </html>

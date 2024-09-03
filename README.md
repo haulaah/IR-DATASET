@@ -23,16 +23,14 @@ The dataset includes detailed records of various Incident Response cases, corres
 -sys_updated_by: identifier of the user who updated the incident and generated the current log record;<br>
 -sys_updated_at: incident system update date and time;<br>
 -contact_type: categorical attribute that shows by what means the incident was reported;<br>
--location: identifier of the location of the place affected;<br>
 -category: first-level description of the affected service;<br>
 -subcategory: second-level description of the affected service (related to the first level description, i.e., to category);<br>
 -u_symptom: description of the user perception about service availability;
--impact: description of the impact caused by the incident (values: 1â€“High; 2â€“Medium; 3â€“Low);<br>
--urgency: description of the urgency informed by the user for the incident resolution (values: 1â€“High; 2â€“Medium; 3â€“Low);<br>
+-impact: description of the impact caused by the incident (values: 1-High; 2-Medium; 3-Low);<br>
+-urgency: description of the urgency informed by the user for the incident resolution (values: values: 1-High; 2-Medium; 3-Low);<br>
 -priority: calculated by the system based on 'impact' and 'urgency';<br>
 -assigned_to: identifier of the user in charge of the incident;<br>
--knowledge: boolean attribute that shows whether a knowledge base document was used to resolve the incident;<br>
--u_priority_confirmation: boolean attribute that shows whether the priority field has been double-checked;<br>
+-knowledge: boolean attribute that shows whether a knowledge base document (Case Template / IR Playbook) was used to resolve the incident;<br>
 -notify: categorical attribute that shows whether notifications were generated for the incident;<br>
 -rfc: (request for change) identifier of the change request associated with the incident;<br>
 -Case ID: Unique identifier for each case;<br>
@@ -40,9 +38,9 @@ The dataset includes detailed records of various Incident Response cases, corres
 -Creation Date: Date when the case was created;<br>
 -Description: Detailed description of the case;<br>
 -Case Task (Array): [Case Tasks Title: Title or brief description of the task within the case, Case Task Start Date: Start date of the task, Case Task Assignee: User assigned to the task, Case Task Status: Current status of the task, Case Task Duration: Duration of the task, Case Attribute Data: Additional attributes or metadata associated with the case];
-Analyst Investigative Activities / Observables (Array): [Analysis Type: Specifies the type of analysis conducted, Analysis ID: A unique identifier for this specific analysis, Timestamp: The date and time when the analysis was performed, Data Value: The specific data being analyzed or a key piece of information about the analysis, Details: Additional information or results from the analysis, Status: The final outcome or status of the analysis];<br>
+Observables Analysis(Array): [Analysis Type: Specifies the type of analysis conducted, Analysis ID: A unique identifier for this specific analysis, Timestamp: The date and time when the analysis was performed, Data Value: The specific data being analyzed or a key piece of information about the analysis, Details: Additional information or results from the analysis, Status: The final outcome or status of the analysis];<br>
 -Ticketing System Chat Log: Chat Data fron ticketing system<br>
--Ticketing system Chat response Data  - Keywords: Keywords extracted from chat responses related to investigation and diagnosis.<br>
+-Ticketing system Chat Data Keywords: Keywords extracted from chat responses related to investigation and diagnosis.<br>
 -Chat Response Overall Sentiment Determination: (Positive Sentiment: Most chat interactions reflect confidence, effective communication, and positive language) or (Negative Sentiment: Most interactions reflect frustration, challenges, or negative emotions) or (Neutral Sentiment: The conversation is balanced, with no strong emotional tone either way);<br>
 -Event ID: Unique identifier for each event;<br>
 -Distribution: How the information within an event or attribute is shared with other organizations or participants in the MISP community;<br>

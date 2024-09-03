@@ -33,20 +33,20 @@ The dataset includes detailed records of different unique Incident Response case
 -**knowledge**: boolean attribute that shows whether a knowledge base document (Case Template / IR Playbook) was used to resolve the incident;<br>
 -**notify**: categorical attribute that shows whether notifications were generated for the incident;<br>
 -**rfc**: (request for change) identifier of the change request associated with the incident;<br>
--**Case ID**: Unique identifier for each case;<br>
--**Case Title**: Title or brief description of the case;<br>
--**Creation Date**: Date when the case was created;<br>
+-**case ID**: Unique identifier for each case;<br>
+-**case Title**: Title or brief description of the case;<br>
+-**creation Date**: Date when the case was created;<br>
 -**Description**: Detailed description of the case;<br>
--**Case Task (Array)**: [Case Tasks Title: Title or brief description of the task within the case, Case Task Start Date: Start date of the task, Case Task Assignee: User assigned to the task, Case Task Status: Current status of the task, Case Task Duration: Duration of the task, Case Attribute Data: Additional attributes or metadata associated with the case];<br>
+-**case Task (Array)**: [Case Tasks Title: Title or brief description of the task within the case, Case Task Start Date: Start date of the task, Case Task Assignee: User assigned to the task, Case Task Status: Current status of the task, Case Task Duration: Duration of the task, Case Attribute Data: Additional attributes or metadata associated with the case];<br>
 -**Observables Analysis (Array)**: [Analysis Type: Specifies the type of analysis conducted, Analysis ID: A unique identifier for this specific analysis, Timestamp: The date and time when the analysis was performed, Data Value: The specific data being analyzed or a key piece of information about the analysis, Details: Additional information or results from the analysis, Status: The final outcome or status of the analysis];<br>
--**Ticketing System Chat Log**: Chat data from the ticketing system;<br>
--**Ticketing System Chat Data Keywords**: Keywords extracted from chat responses related to investigation and diagnosis;<br>
--**Chat Response Overall Sentiment Determination**: (Positive Sentiment: Most chat interactions reflect confidence, effective communication, and positive language) or (Negative Sentiment: Most interactions reflect frustration, challenges, or negative emotions) or (Neutral Sentiment: The conversation is balanced, with no strong emotional tone either way);<br>
--**Event ID**: Unique identifier for each event;<br>
--**Distribution**: How the information within an event or attribute is shared with other organizations or participants in the MISP community;<br>
--**Event Information (Description)**: Detailed description of the event;<br>
--**Threat Level**: Assessed threat level of the event;<br>
--**Event Attributes**: Various attributes related to the event;<br>
+-**ticketing System Chat Log**: Chat data from the ticketing system;<br>
+-**ticketing System Chat Data Keywords**: Keywords extracted from chat responses related to investigation and diagnosis;<br>
+-**chat Response Overall Sentiment Determination**: (Positive Sentiment: Most chat interactions reflect confidence, effective communication, and positive language) or (Negative Sentiment: Most interactions reflect frustration, challenges, or negative emotions) or (Neutral Sentiment: The conversation is balanced, with no strong emotional tone either way);<br>
+-**event ID**: Unique identifier for each event;<br>
+-**distribution**: How the information within an event or attribute is shared with other organizations or participants in the MISP community;<br>
+-**event Information (Description)**: Detailed description of the event;<br>
+-**threat Level**: Assessed threat level of the event;<br>
+-**event Attributes**: Various attributes related to the event;<br>
 -**close_code**: identifier of the resolution of the incident;<br>
 -**resolved_by**: identifier of the user who resolved the incident;<br>
 -**resolved_at**: incident user resolution date and time (dependent variable);<br>

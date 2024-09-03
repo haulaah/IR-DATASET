@@ -1,14 +1,14 @@
 # LLM-IR-Dataset
 
-This repository contains a synthetic Incident Response Process Activities and Communication data Log dataset generated using an LLM. An exisiting anonymised publicly available Incident managament Process Log dataset was augmented to include additional fields and textual data.
+This repository contains a synthetic Incident Response Process Activities and Communication data Log dataset generated using an LLM.
 
 ## Dataset Description
 
-The dataset includes detailed records of various Incident Response cases, corresponding actions, processes, and communication. Each record represents an individual incident and contains information relevant to the response actions and resolution of security incidents.
+The dataset includes detailed records of different unique Incident Response cases, corresponding actions, processes, and communication data.
 
 ### Field Description
 
--number: incident identifier; <br>
+-**number**: incident identifier; <br>
 -incident state: eight levels controlling the incident management process transitions from opening until closing the case;<br>
 -active: boolean attribute that shows whether the record is active or closed/canceled;<br>
 -reassignment_count: number of times the incident has the group or the support analysts changed;<br>

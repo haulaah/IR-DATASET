@@ -1,6 +1,6 @@
 # LLM-IR-Dataset
 
-This repository contains a synthetic Incident Response Process Activities and Communication data Log dataset generated using an LLM.
+This repository contains a dataset of Incident Response Process Activities and Communication data Log dataset. The dataset was produced by augmenting an existing IR Process Log dataset using synthetic LLM generated data.
 
 ## Dataset Description
 

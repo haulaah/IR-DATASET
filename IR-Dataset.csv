@@ -1,0 +1,545 @@
+Field,Value
+number,INC0000045
+incident_state,Closed
+active,FALSE
+reassignment_count,0
+reopen_count,0
+sys_mod_count,4
+made_sla,TRUE
+caller_id,Caller 2403
+opened_by,user_456
+opened_at,29/02/2016 01:16
+sys_created_by,user_456
+sys_created_at,29/02/2016 01:23
+sys_updated_by,user_789
+sys_updated_at,05/03/2016 12:00
+contact_type,Phone
+category,Security
+subcategory,Phishing
+u_symptom,Suspicious email received
+impact,2 - Medium
+urgency,2 - Medium
+priority,3 - Moderate
+assigned_to,user_789
+knowledge,TRUE
+notify,Do Not Notify
+rfc,RFC001224
+Case ID,CASE001
+Case Title,Phishing Attack Detected
+Creation Date,29/02/2016 01:16
+Description,Suspicious email detected requiring immediate attention
+Case Tasks,"[{""Case Tasks Title"": ""Email Filtering"", ""Case Task Start Date"": ""29/02/2016 01:30"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{ 'email': 'suspicious@example.com', 'reason': 'unknown sender' }""}, {""Case Tasks Title"": ""Quarantine Email"", ""Case Task Start Date"": ""29/02/2016 01:40"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""20 minutes"", ""Case Attribute Data"": ""{ 'email_id': '12345', 'status': 'quarantined' }""}, {""Case Tasks Title"": ""Endpoint Isolation"", ""Case Task Start Date"": ""29/02/2016 01:45"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""40 minutes"", ""Case Attribute Data"": ""{ 'endpoints': ['PC001', 'PC002'], 'status': 'isolated' }""}, {""Case Tasks Title"": ""Analyzing IoCs"", ""Case Task Start Date"": ""29/02/2016 02:00"", ""Case Task Assignee"": ""user_456"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{ 'data_collected': 'sender_info, email_content, IP_address' }""}, {""Case Tasks Title"": ""Email Removal"", ""Case Task Start Date"": ""29/02/2016 02:15"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""25 minutes"", ""Case Attribute Data"": ""{ 'removed_emails': ['suspicious@example.com'] }""}, {""Case Tasks Title"": ""Apply Patches"", ""Case Task Start Date"": ""29/02/2016 02:45"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{ 'patches_applied': 'Security_patch_1, Security_patch_2' }""}, {""Case Tasks Title"": ""Filtering Criteria Review"", ""Case Task Start Date"": ""29/02/2016 03:15"", ""Case Task Assignee"": ""user_789"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""45 minutes"", ""Case Attribute Data"": ""{ 'new_criteria': 'Updated filters to include recent phishing patterns' }""}, {""Case Tasks Title"": ""Incident Report"", ""Case Task Start Date"": ""29/02/2016 04:00"", ""Case Task Assignee"": ""user_456"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{ 'report_summary': 'Phishing attack successfully contained and remediated.' }""}]"
+Observables Analysis,"[{""Analysis Type"": ""File"", ""Analysis ID"": ""file-2016-001"", ""Timestamp"": ""2016-02-29 02:00:10 UTC"", ""Data Value"": ""MD5 Hash: e99a18c428cb38d5f260853678922e03"", ""Details"": ""Detected by 7/60 antivirus engines, flagged as Trojan:Win32/Generic and Ransomware:Win32/Locky"", ""Status"": ""Success""}, {""Analysis Type"": ""URL"", ""Analysis ID"": ""url-2016-002"", ""Timestamp"": ""2016-02-29 02:01:10  UTC"", ""Data Value"": ""URL: http://malicious-site.com"", ""Details"": ""Reputation score is 0 (High risk), associated with known phishing campaigns"", ""Status"": ""Success""}, {""Analysis Type"": ""IP Address"", ""Analysis ID"": ""ip-2016-003"", ""Timestamp"": ""2016-02-29 02:01:130  UTC"", ""Data Value"": ""IP Address: 192.168.1.100"", ""Details"": ""IP is listed in threat intelligence feeds as associated with phishing activities, has been involved in 5 previous incidents"", ""Status"": ""Success""}, {""Analysis Type"": ""Domain"", ""Analysis ID"": ""domain-2016-004"", ""Timestamp"": ""2016-02-29 02:02:10  UTC"", ""Data Value"": ""Domain: example-malicious.com"", ""Details"": ""Domain is associated with multiple known phishing campaigns, reputation score is 0 (High risk)"", ""Status"": ""Success""}, {""Analysis Type"": ""Email Header"", ""Analysis ID"": ""email-2016-005"", ""Timestamp"": ""2016-02-29 02:02:50 UTC"", ""Data Value"": ""Header Analysis: Received: from mail.example.com"", ""Details"": ""Header indicates the email was sent from a known suspicious IP, associated with previous phishing attempts"", ""Status"": ""Success""}, {""Analysis Type"": ""Process"", ""Analysis ID"": ""process-2016-006"", ""Timestamp"": ""2016-02-29 02:03:04  UTC"", ""Data Value"": ""Process ID: 1234, Process Name: suspicious.exe"", ""Details"": ""Process is flagged by multiple security tools as malicious, showing behavior consistent with ransomware"", ""Status"": ""Success""}]"
+Chat Log,"User_789 [01:16 AM]: ""Received a report of a suspicious email from Caller 2403. The email seems to be a phishing attempt. We should start by filtering and quarantining it immediately."" User_456 [01:20 AM]: ""The email has been flagged as containing potentially malicious links. Will update once they respond."" User_789 [01:30 AM]: ""Email has been quarantined. I’ve initiated a malware scan on the affected endpoints. It’s quite a frustrating issue, but we should resolve it quickly."" User_456 [01:45 AM]: ""Confirmed, the malware scan is in progress. The situation is critical, but I’m confident we’ll handle it effectively. Let’s keep the communication flowing."" User_789 [02:00 AM]: ""Collected data on the email sender and IP address. The sender is flagged in our threat database. The scan didn’t find any immediate threats on the endpoints, but we’re still monitoring."" User_456 [02:15 AM]: ""Removing the phishing email from all inboxes. Users are notified with guidance on recognizing phishing attempts. The support from the team has been excellent."" User_789 [02:30 AM]: ""Applied security patches to address potential vulnerabilities. This should mitigate similar threats in the future. Overall, the situation was managed well, despite the initial difficulties."" User_456 [03:00 AM]: ""Reviewed filtering criteria to include the new phishing patterns. The incident is resolved quickly. The quick response and team support were crucial."" User_789 [03:30 AM]: ""Incident report is being drafted. Summary: Phishing attack successfully contained with no major impact. We acted swiftly and effectively."" User_456 [04:00 AM]: ""Final report completed and shared. Good job to everyone involved. It was a challenging situation, but we resolved it efficiently."""
+Chat Keywords,"[""phishing"", ""email quarantine"", ""malware scan"", ""unusual domain"", ""unexpected activity"", ""new threat"", ""sensitive files"", ""network activity"", ""security patches"", ""filtering rules"", ""larger campaign"", ""new findings""]"
+Chat Sentiment Determination,Urgency
+Event ID,101
+Distribution,Organization only
+Event Information,Phishing attempt detected
+Threat Level,High
+Event Attributes,"{ 'email_subject': 'Urgent Request', 'email_sender': 'unknown@example.com' }"
+close_code,Phishing_Resolved
+resolved_by,user_149
+resolved_at,29/02/2016 11:29
+closed_at,05/03/2016 12:00
+
+Field,Value
+number,INC0000047
+incident_state,Closed
+active,FALSE
+reassignment_count,0
+reopen_count,0
+sys_mod_count,8
+made_sla,TRUE
+caller_id,Caller 2403
+opened_by,user_123
+opened_at,29/02/2016 04:40
+sys_created_by,user_123
+sys_created_at,29/02/2016 04:57
+sys_updated_by,user_890
+sys_updated_at,06/03/2016 10:00
+contact_type,Phone
+category,Security
+subcategory,Brute-Force Attack
+u_symptom,Multiple failed login attempts detected
+impact,2 - Medium
+urgency,2 - Medium
+priority,3 - Moderate
+assigned_to,user_890
+knowledge,FALSE
+notify,Do Not Notify
+rfc,RFC001225
+Case ID,CASE003
+Case Title,Brute-Force Attack Detected
+Creation Date,29/02/2016 04:40
+Description,Multiple failed login attempts detected
+Case Tasks,"[{""Case Tasks Title"": ""Login Attempt Analysis"", ""Case Task Start Date"": ""29/02/2016 05:00"", ""Case Task Assignee"": ""user_123"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{ 'login_attempts': '100', 'failed_attempts': '98' }""}, {""Case Tasks Title"": ""Account Lockout"", ""Case Task Start Date"": ""29/02/2016 06:00"", ""Case Task Assignee"": ""user_890"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{ 'accounts_locked': '50' }""}, {""Case Tasks Title"": ""IP Blocking"", ""Case Task Start Date"": ""29/02/2016 06:30"", ""Case Task Assignee"": ""user_123"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{ 'blocked_ips': '192.0.2.2, 203.0.113.6' }""}, {""Case Tasks Title"": ""Notify Users"", ""Case Task Start Date"": ""29/02/2016 07:00"", ""Case Task Assignee"": ""user_890"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""20 minutes"", ""Case Attribute Data"": ""{ 'notification_sent': 'users informed' }""}, {""Case Tasks Title"": ""Incident Report"", ""Case Task Start Date"": ""29/02/2016 07:30"", ""Case Task Assignee"": ""user_123"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""45 minutes"", ""Case Attribute Data"": ""{ 'report_summary': 'Brute-force attack mitigated.' }""}]"
+Observables Analysis,"[{""Analysis Type"": ""IP Address"", ""Analysis ID"": ""ip-2016-016"", ""Timestamp"": ""2016-02-29 06:00:00 UTC"", ""Data Value"": ""IP Address: 192.0.2.2"", ""Details"": ""IP listed in threat feeds as source of multiple failed login attempts"", ""Status"": ""Success""}]"
+Chat Log,"User_123 [04:40 AM]: ""Multiple failed login attempts have been detected. Starting the analysis of failed login attempts. Initial findings indicate a high volume of failed attempts."" User_890 [04:45 AM]: ""Initiated the account lockout process for affected accounts. We'll start IP blocking next."" User_123 [05:00 AM]: ""IP blocking is underway. Monitoring blocked IPs for any further suspicious activity."" User_890 [06:00 AM]: ""Users have been notified of the incident and security measures taken."" User_890 [07:00 AM]: ""Drafting the incident report summarizing the steps taken and resolution."""
+Chat Keywords,"[""brute-force"", ""login attempts"", ""account lockout"", ""IP blocking"", ""user notifications"", ""incident reporting""]"
+Chat Sentiment Determination,Confidence
+Event ID,104
+Distribution,Organization only
+Event Information,Brute-force attack detected
+Threat Level,High
+Event Attributes,"{ 'login_attempts': '100', 'failed_attempts': '98' }"
+close_code,Bruteforce_Resolved
+resolved_by,user_890
+resolved_at,01/03/2016 09:52
+closed_at,06/03/2016 10:00
+
+Field,Value
+number,INC0000057
+incident_state,Closed
+active,FALSE
+reassignment_count,0
+reopen_count,0
+sys_mod_count,6
+made_sla,TRUE
+caller_id,Caller 4416
+opened_by,user_008
+opened_at,29/02/2016 06:10
+sys_created_by,user_008
+sys_created_at,29/02/2016 06:10
+sys_updated_by,user_908
+sys_updated_at,06/03/2016 03:00
+contact_type,Phone
+category,Network
+subcategory,DDoS Attack
+u_symptom,Unusually high traffic detected
+impact,2 - Medium
+urgency,2 - Medium
+priority,3 - Moderate
+assigned_to,user_006
+knowledge,FALSE
+notify,Do Not Notify
+rfc,RFC001226
+Case ID,CASE004
+Case Title,DDoS Attack Detected
+Creation Date,29/02/2016 06:10
+Description,Detected unusually high network traffic indicative of a DDoS attack
+Case Tasks,"[{""Case Tasks Title"": ""Traffic Analysis"", ""Case Task Start Date"": ""29/02/2016 06:30"", ""Case Task Assignee"": ""user_008"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{ 'traffic_volume': '150GB', 'malicious_sources': '5' }""}, {""Case Tasks Title"": ""IP Blacklisting"", ""Case Task Start Date"": ""29/02/2016 07:30"", ""Case Task Assignee"": ""user_006"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{ 'blocked_ips': '192.0.2.1, 203.0.113.5' }""}, {""Case Tasks Title"": ""Rate Limiting"", ""Case Task Start Date"": ""29/02/2016 08:00"", ""Case Task Assignee"": ""user_008"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""45 minutes"", ""Case Attribute Data"": ""{ 'rate_limit': '50 requests/min' }""}, {""Case Tasks Title"": ""User Notification"", ""Case Task Start Date"": ""29/02/2016 08:30"", ""Case Task Assignee"": ""user_006"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""20 minutes"", ""Case Attribute Data"": ""{ 'notification_sent': 'users informed of potential disruptions' }""}, {""Case Tasks Title"": ""Incident Report"", ""Case Task Start Date"": ""29/02/2016 09:00"", ""Case Task Assignee"": ""user_008"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{ 'report_summary': 'DDoS attack mitigated through traffic management.' }""}]"
+Observables Analysis,"[{""Analysis Type"": ""IP Address"", ""Analysis ID"": ""ip-2016-020"", ""Timestamp"": ""2016-02-29 07:00:00 UTC"", ""Data Value"": ""IP Address: 192.0.2.1"", ""Details"": ""IP is known for participating in DDoS attacks, flagged in threat intelligence feeds."", ""Status"": ""Success""}]"
+Chat Log,"User_008 [06:10 AM]: ""We have detected unusually high traffic on the network. Starting traffic analysis to identify the source."" User_006 [06:15 AM]: ""Confirmed. Monitoring traffic patterns for anomalies. Initial indications point to a potential DDoS attack."" User_008 [06:30 AM]: ""Analyzing the traffic volume. We need to prepare to block suspicious IPs."" User_006 [07:00 AM]: ""IP blacklisting is underway. Implementing rate limiting on affected services."" User_008 [08:00 AM]: ""Users have been notified of possible service disruptions. Monitoring is ongoing."" User_006 [09:00 AM]: ""Drafting the incident report summarizing the steps taken and resolution."""
+Chat Sentiment Determination,Confidence
+Event ID,110
+Distribution,Organization only
+Event Information,DDoS attack detected
+Threat Level,High
+Event Attributes,"{ 'traffic_volume': '150GB', 'malicious_sources': '5' }"
+close_code,DDoS_Resolved
+resolved_by,user_006
+resolved_at,01/03/2016 02:55
+closed_at,06/03/2016 03:00
+
+Field,Value
+number,INC0000060
+incident_state,Closed
+active,FALSE
+reassignment_count,0
+reopen_count,0
+sys_mod_count,3
+made_sla,TRUE
+caller_id,Caller 4491
+opened_by,user_180
+opened_at,29/02/2016 06:38
+sys_created_by,user_081
+sys_created_at,29/02/2016 06:42
+sys_updated_by,user_908
+sys_updated_at,07/03/2016 13:00
+contact_type,Phone
+category,Malware
+subcategory,Infection
+u_symptom,Detected malware on the system
+impact,2 - Medium
+urgency,2 - Medium
+priority,3 - Moderate
+assigned_to,user_125
+knowledge,FALSE
+notify,Do Not Notify
+rfc,RFC001227
+Case ID,CASE005
+Case Title,Malware Infection Detected
+Creation Date,29/02/2016 06:38
+Description,Malware detected on the endpoint system; immediate action required.
+Case Tasks,"[{""Case Tasks Title"": ""Malware Scan"", ""Case Task Start Date"": ""29/02/2016 06:50"", ""Case Task Assignee"": ""user_180"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{ 'malware_detected': 'Trojan', 'files_infected': '10' }""}, {""Case Tasks Title"": ""Quarantine Infected Files"", ""Case Task Start Date"": ""29/02/2016 07:55"", ""Case Task Assignee"": ""user_125"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{ 'quarantined_files': '5' }""}, {""Case Tasks Title"": ""System Cleanup"", ""Case Task Start Date"": ""29/02/2016 08:30"", ""Case Task Assignee"": ""user_180"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{ 'cleanup_success': 'true' }""}, {""Case Tasks Title"": ""User Notification"", ""Case Task Start Date"": ""29/02/2016 09:30"", ""Case Task Assignee"": ""user_125"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""20 minutes"", ""Case Attribute Data"": ""{ 'notification_sent': 'user informed of malware detected' }""}, {""Case Tasks Title"": ""Incident Report"", ""Case Task Start Date"": ""29/02/2016 10:00"", ""Case Task Assignee"": ""user_180"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""45 minutes"", ""Case Attribute Data"": ""{ 'report_summary': 'Malware infection resolved through detection and cleanup.' }""}]"
+Observables Analysis,"[{""Analysis Type"": ""File Hash"", ""Analysis ID"": ""hash-2016-003"", ""Timestamp"": ""2016-02-29 07:00:00 UTC"", ""Data Value"": ""File Hash: abc123xyz"", ""Details"": ""File identified as malware in threat intelligence databases."", ""Status"": ""Success""}]"
+Chat Log,"User_180 [06:38 AM]: ""Malware detected on endpoint. Initiating immediate response measures."" User_125 [06:45 AM]: ""Starting a full malware scan on the system."" User_180 [07:00 AM]: ""Malware scan complete. Found Trojan and several infected files."" User_125 [07:30 AM]: ""Quarantining infected files. Preparing for cleanup."" User_180 [08:30 AM]: ""System cleanup completed successfully. User has been notified."" User_180 [09:00 AM]: ""Drafting the incident report summarizing the steps taken."""
+Chat Keywords,"[""malware"", ""infection detection"", ""malware scan"", ""file quarantine"", ""system cleanup"", ""user notification"", ""incident reporting""]"
+Chat Sentiment Determination,Confidence
+Event ID,120
+Distribution,Organization only
+Event Information,Malware infection detected
+Threat Level,High
+Event Attributes,"{ 'malware_detected': 'Trojan', 'files_infected': '10' }"
+close_code,Malware_Resolved
+resolved_by,user_113
+resolved_at,02/03/2016 12:06
+closed_at,07/03/2016 13:00
+
+Field,Value
+number,INC0000062
+incident_state,Closed
+active,FALSE
+reassignment_count,1
+reopen_count,0
+sys_mod_count,7
+made_sla,TRUE
+caller_id,Caller 3765
+opened_by,user_180
+opened_at,29/02/2016 06:58
+sys_created_by,user_081
+sys_created_at,29/02/2016 07:26
+sys_updated_by,user_908
+sys_updated_at,05/03/2016 16:00
+contact_type,Phone
+category,Service Disruption
+subcategory,System Outage
+u_symptom,User reports unable to access services
+impact,1 - High
+urgency,2 - Medium
+priority,2 - High
+assigned_to,user_23
+knowledge,FALSE
+notify,Do Not Notify
+rfc,RFC001230
+Case ID,CASE007
+Case Title,System Access Issue
+Creation Date,29/02/2016 06:58
+Description,User unable to access essential services; urgent resolution required.
+Case Tasks,"[{""Case Tasks Title"": ""Initial Assessment"", ""Case Task Start Date"": ""29/02/2016 07:00"", ""Case Task Assignee"": ""user_180"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""20 minutes"", ""Case Attribute Data"": ""{ 'issue_assessed': 'Unable to access service due to outage.' }""}, {""Case Tasks Title"": ""Service Restoration"", ""Case Task Start Date"": ""29/02/2016 07:30"", ""Case Task Assignee"": ""user_23"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{ 'services_restored': 'Access regained' }""}, {""Case Tasks Title"": ""User Notification"", ""Case Task Start Date"": ""29/02/2016 08:30"", ""Case Task Assignee"": ""user_180"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""15 minutes"", ""Case Attribute Data"": ""{ 'notification_sent': 'User informed of resolution' }""}, {""Case Tasks Title"": ""Incident Report"", ""Case Task Start Date"": ""29/02/2016 09:00"", ""Case Task Assignee"": ""user_23"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{ 'report_summary': 'Service disruption due to network issues.' }""}]"
+Observables Analysis,"[{""Analysis Type"": ""System Logs"", ""Analysis ID"": ""log-2016-001"", ""Timestamp"": ""2016-02-29 07:10:00 UTC"", ""Data Value"": ""Error detected in service logs."", ""Details"": ""Network outage reported by multiple users."", ""Status"": ""Investigating""}]"
+Chat Log,"User_180 [06:58 AM]: ""User reports unable to access services. Investigating now."" User_23 [07:05 AM]: ""Initial assessment indicates a potential network issue."" User_180 [07:15 AM]: ""Escalating to network team for immediate assistance."" User_23 [08:00 AM]: ""Services restored; notifying user of resolution."" User_180 [08:15 AM]: ""Incident report being drafted to outline cause and response measures."""
+Chat Keywords,"[""service disruption"", ""system outage"", ""network issues"", ""service restoration"", ""user notification"", ""incident reporting""]"
+Chat Sentiment Determination,Confidence
+Event ID,125
+Distribution,Organization only
+Event Information,Service disruption detected
+Threat Level,Medium
+Event Attributes,"{ 'issue_type': 'service disruption', 'affected_services': 'email, file access' }"
+close_code,Service_Disruption_Resolved
+resolved_by,user_62
+resolved_at,29/02/2016 15:51
+closed_at,05/03/2016 16:00
+
+Field,Value
+number,INC0000063
+incident_state,Closed
+active,FALSE
+reassignment_count,1
+reopen_count,0
+sys_mod_count,7
+made_sla,TRUE
+caller_id,Caller 2146
+opened_by,user_180
+opened_at,29/02/2016 07:08
+sys_created_by,user_081
+sys_created_at,29/02/2016 07:17
+sys_updated_by,user_908
+sys_updated_at,05/03/2016 17:00
+contact_type,Phone
+category,Security Incident
+subcategory,Data Breach
+u_symptom,User reports unauthorized access to sensitive data
+impact,2 - Medium
+urgency,2 - Medium
+priority,3 - Moderate
+assigned_to,user_23
+knowledge,FALSE
+notify,Do Not Notify
+rfc,RFC001234
+Case ID,CASE008
+Case Title,Unauthorized Access Detected
+Creation Date,29/02/2016 07:08
+Description,User reported potential unauthorized access to sensitive information; urgent investigation required.
+Case Tasks,"[{""Case Tasks Title"": ""Initial Investigation"", ""Case Task Start Date"": ""29/02/2016 07:15"", ""Case Task Assignee"": ""user_180"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{ 'investigation_started': 'Analyzing access logs.' }""}, {""Case Tasks Title"": ""Data Protection Measures"", ""Case Task Start Date"": ""29/02/2016 08:00"", ""Case Task Assignee"": ""user_23"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{ 'data_protection_measures': 'Access revoked for affected accounts.' }""}, {""Case Tasks Title"": ""User Notification"", ""Case Task Start Date"": ""29/02/2016 09:30"", ""Case Task Assignee"": ""user_180"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""15 minutes"", ""Case Attribute Data"": ""{ 'notification_sent': 'User informed about the incident.' }""}, {""Case Tasks Title"": ""Incident Report"", ""Case Task Start Date"": ""29/02/2016 10:00"", ""Case Task Assignee"": ""user_23"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{ 'report_summary': 'Unauthorized access detected; actions taken.' }""}]"
+Observables Analysis,"[{""Analysis Type"": ""Access Logs"", ""Analysis ID"": ""log-2016-002"", ""Timestamp"": ""2016-02-29 07:30:00 UTC"", ""Data Value"": ""Unauthorized access attempt detected."", ""Details"": ""Multiple failed login attempts from external IPs."", ""Status"": ""Investigating""}]"
+Chat Log,"User_180 [07:08 AM]: ""User reports potential unauthorized access. Investigating now."" User_23 [07:30 AM]: ""Initial investigation indicates multiple failed logins."" User_180 [08:15 AM]: ""Access for affected accounts has been revoked."" User_23 [09:00 AM]: ""User notified; incident report in progress."""
+Chat Keywords,"[""security breach"", ""data breach"", ""unauthorized access"", ""investigation"", ""user notification"", ""incident reporting""]"
+Chat Sentiment Determination,Frustration
+Event ID,135
+Distribution,Organization only
+Event Information,Security breach detected
+Threat Level,High
+Event Attributes,"{ 'issue_type': 'security breach', 'affected_data': 'user credentials, personal information' }"
+close_code,Security_Breach_Resolved
+resolved_by,user_62
+resolved_at,29/02/2016 16:01
+closed_at,05/03/2016 17:00
+
+Field,Value
+number,INC0000064
+incident_state,Closed
+active,FALSE
+reassignment_count,1
+reopen_count,0
+sys_mod_count,8
+made_sla,TRUE
+caller_id,Caller 2838
+opened_by,user_131
+opened_at,29/02/2016 07:10
+sys_created_by,user_062
+sys_created_at,29/02/2016 07:14
+sys_updated_by,user_908
+sys_updated_at,08/03/2016 17:00
+contact_type,Phone
+category,Malware Incident
+subcategory,Malware Infection
+u_symptom,User reports suspicious activity and slow performance
+impact,2 - Medium
+urgency,2 - Medium
+priority,3 - Moderate
+assigned_to,user_28
+resolver,user_078
+knowledge,FALSE
+notify,Do Not Notify
+rfc,RFC001234
+Case ID,CASE009
+Case Title,Suspicious Malware Activity Detected
+Creation Date,29/02/2016 07:10
+Description,User reported unusual system behavior; suspected malware infection.
+Case Tasks,"[{""Case Tasks Title"": ""Initial Analysis"", ""Case Task Start Date"": ""29/02/2016 07:20"", ""Case Task Assignee"": ""user_131"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{ 'initial_analysis': 'Scanning for malware.' }""}, {""Case Tasks Title"": ""Malware Removal"", ""Case Task Start Date"": ""29/02/2016 08:30"", ""Case Task Assignee"": ""user_078"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{ 'removal_tools_used': 'Antivirus software.' }""}, {""Case Tasks Title"": ""User Notification"", ""Case Task Start Date"": ""29/02/2016 09:45"", ""Case Task Assignee"": ""user_131"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""15 minutes"", ""Case Attribute Data"": ""{ 'notification_sent': 'User informed about malware removal.' }""}, {""Case Tasks Title"": ""Post-Incident Review"", ""Case Task Start Date"": ""29/02/2016 10:30"", ""Case Task Assignee"": ""user_078"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{ 'review_summary': 'Malware removed; system cleaned.' }""}]"
+Observables Analysis,"[{""Analysis Type"": ""Malware Scan"", ""Analysis ID"": ""scan-2016-004"", ""Timestamp"": ""2016-02-29 08:00:00 UTC"", ""Data Value"": ""Malware detected and quarantined."", ""Details"": ""Suspicious files identified and removed."", ""Status"": ""Completed""}]"
+Chat Log,"User_131 [07:10 AM]: ""User reports suspicious activity; scanning now."" User_078 [08:00 AM]: ""Malware detected and quarantined."" User_131 [09:00 AM]: ""User notified; system is secure now."""
+Chat Keywords,"[""malware infection"", ""suspicious activity"", ""malware removal"", ""user notification"", ""incident review""]"
+Chat Sentiment Determination,Confidence
+Event ID,145
+Distribution,Organization only
+Event Information,Malware infection detected
+Threat Level,High
+Event Attributes,"{ 'issue_type': 'malware infection', 'affected_systems': 'user workstation' }"
+close_code,Malware_Infection_Resolved
+resolved_by,user_071
+resolved_at,03/03/2016 16:00
+closed_at,08/03/2016 17:00
+
+Field,Value
+number,INC0000065
+incident_state,Closed
+active,FALSE
+reassignment_count,6
+reopen_count,0
+sys_mod_count,13
+made_sla,TRUE
+caller_id,Caller 5323
+opened_by,user_131
+opened_at,29/02/2016 07:38
+sys_created_by,user_062
+sys_created_at,29/02/2016 07:46
+sys_updated_by,user_908
+sys_updated_at,07/03/2016 16:00
+contact_type,Phone
+category,Network Incident
+subcategory,Network Outage
+u_symptom,User reports loss of internet connectivity
+impact,2 - Medium
+urgency,2 - Medium
+priority,3 - Moderate
+assigned_to,user_33
+resolver,user_216
+knowledge,FALSE
+notify,Do Not Notify
+rfc,RFC001235
+Case ID,CASE010
+Case Title,Network Connectivity Issues Reported
+Creation Date,29/02/2016 07:38
+Description,User reported loss of internet connectivity across multiple devices.
+Case Tasks,"[{""Case Tasks Title"": ""Initial Investigation"", ""Case Task Start Date"": ""29/02/2016 08:00"", ""Case Task Assignee"": ""user_131"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{ 'investigation_result': 'Router rebooted.' }""}, {""Case Tasks Title"": ""Network Monitoring"", ""Case Task Start Date"": ""29/02/2016 09:15"", ""Case Task Assignee"": ""user_216"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""2 hours"", ""Case Attribute Data"": ""{ 'monitoring_result': 'Network stable after reboot.' }""}, {""Case Tasks Title"": ""User Notification"", ""Case Task Start Date"": ""29/02/2016 11:30"", ""Case Task Assignee"": ""user_131"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""15 minutes"", ""Case Attribute Data"": ""{ 'notification_sent': 'Users informed of restored connectivity.' }""}]"
+Observables Analysis,"[{""Analysis Type"": ""Network Log Analysis"", ""Analysis ID"": ""log-2016-005"", ""Timestamp"": ""2016-02-29 08:30:00 UTC"", ""Data Value"": ""Traffic spikes detected before outage."", ""Details"": ""Router logs indicate potential DDoS attack."", ""Status"": ""Completed""}]"
+Chat Log,"User_131 [07:38 AM]: ""User reports loss of internet connectivity."" User_216 [08:30 AM]: ""Investigating router logs now."" User_131 [11:00 AM]: ""Connectivity restored; users notified."""
+Chat Keywords,"[""network outage"", ""connectivity issues"", ""router reboot"", ""user notification"", ""incident resolution""]"
+Chat Sentiment Determination,Urgency
+Event ID,146
+Distribution,Organization only
+Event Information,Network outage reported 
+Threat Level,Medium
+Event Attributes,"{ 'issue_type': 'network outage', 'affected_systems': 'all workstations' }"
+close_code,Network_Outage_Resolved
+resolved_by,user_197
+resolved_at,02/03/2016 15:21
+closed_at,07/03/2016 16:00
+
+Field,Value
+number,INC0000066
+incident_state,Closed
+active,FALSE
+reassignment_count,1
+reopen_count,0
+sys_mod_count,3
+made_sla,TRUE
+caller_id,Caller 3796
+opened_by,user_024
+opened_at,29/02/2016 08:03
+sys_created_by,user_013
+sys_created_at,29/02/2016 08:18
+sys_updated_by,user_908
+sys_updated_at,07/03/2016 15:00
+contact_type,Phone
+category,Application Support
+subcategory,Application Error
+u_symptom,Application crashes on launch
+impact,2 - Medium
+urgency,2 - Medium
+priority,3 - Moderate
+assigned_to,user_54
+resolver,user_208
+knowledge,FALSE
+notify,Do Not Notify
+rfc,RFC001236
+Case ID,CASE011
+Case Title,Application Crash Reported
+Creation Date,29/02/2016 08:03
+Description,User reported that the application crashes every time it is launched.
+Case Tasks,"[{""Case Tasks Title"": ""Initial Diagnosis"", ""Case Task Start Date"": ""29/02/2016 08:30"", ""Case Task Assignee"": ""user_024"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{ 'diagnosis_result': 'Application logs analyzed.' }""}, {""Case Tasks Title"": ""Patch Deployment"", ""Case Task Start Date"": ""29/02/2016 09:00"", ""Case Task Assignee"": ""user_208"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{ 'patch_deployed': 'Update applied successfully.' }""}, {""Case Tasks Title"": ""User Notification"", ""Case Task Start Date"": ""29/02/2016 10:15"", ""Case Task Assignee"": ""user_024"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""15 minutes"", ""Case Attribute Data"": ""{ 'notification_sent': 'User informed of resolution.' }""}]"
+Observables Analysis,"[{""Analysis Type"": ""Application Log Analysis"", ""Analysis ID"": ""log-2016-006"", ""Timestamp"": ""2016-02-29 08:45:00 UTC"", ""Data Value"": ""Application crash logs indicate missing dependencies."", ""Details"": ""Root cause identified as missing library files."", ""Status"": ""Completed""}]"
+Chat Log,"User_024 [08:03 AM]: ""User reports application crash. We need to prioritize this!"" User_208 [08:30 AM]: ""Looking at the logs now. I’m confident we can resolve this quickly."" User_024 [09:00 AM]: ""Any updates?"" User_208 [09:05 AM]: ""I see the issue; deploying a patch shortly.""
+User_024 [10:00 AM]: ""Great! Keep me posted."" User_208 [10:15 AM]: ""Patch deployed. I’ll notify the user now."" User_024 [10:30 AM]: ""Thanks for the quick turnaround!"""
+Chat Keywords,"[""application crash"", ""log analysis"", ""issue resolution"", ""patch deployment"", ""user notification""]"
+Chat Sentiment Determination,Optimism
+Event ID,147
+Distribution,Organization only
+Event Information,Application crash reported 
+Threat Level,Medium
+Event Attributes,"{ 'issue_type': 'application error', 'affected_systems': 'user application' }"
+close_code,Application_Error_Resolved
+resolved_by,user_208
+resolved_at,02/03/2016 14:37
+closed_at,07/03/2016 15:00
+
+Field,Value
+number,INC0000067
+incident_state,Closed
+active,FALSE
+reassignment_count,1
+reopen_count,0
+sys_mod_count,10
+made_sla,TRUE
+caller_id,Caller 442
+opened_by,user_180
+opened_at,29/02/2016 08:03
+sys_created_by,user_081
+sys_created_at,29/02/2016 08:05
+sys_updated_by,user_908
+sys_updated_at,07/03/2016 12:00
+contact_type,Phone
+category,Cybersecurity
+subcategory,Unauthorized Access
+u_symptom,Multiple failed login attempts detected
+impact,2 - Medium
+urgency,2 - Medium
+priority,3 - Moderate
+assigned_to,user_236
+resolver,user_215
+knowledge,FALSE
+notify,Do Not Notify
+rfc,RFC001237
+Case ID,CASE012
+Case Title,Unauthorized Access Attempt Detected
+Creation Date,29/02/2016 08:03
+Description,User reported multiple failed login attempts from an unrecognized IP address.
+Case Tasks,"[{""Case Tasks Title"": ""Initial Investigation"", ""Case Task Start Date"": ""29/02/2016 08:30"", ""Case Task Assignee"": ""user_180"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""45 minutes"", ""Case Attribute Data"": ""{ 'investigation_result': 'Identified multiple failed attempts from external IP.' }""}, {""Case Tasks Title"": ""User Account Lockout"", ""Case Task Start Date"": ""29/02/2016 09:15"", ""Case Task Assignee"": ""user_215"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{ 'account_locked': 'User account locked temporarily.' }""}, {""Case Tasks Title"": ""User Notification"", ""Case Task Start Date"": ""29/02/2016 09:45"", ""Case Task Assignee"": ""user_180"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""15 minutes"", ""Case Attribute Data"": ""{ 'notification_sent': 'User informed about the security incident.' }""}]"
+Observables Analysis,"[{""Analysis Type"": ""Login Attempt Analysis"", ""Analysis ID"": ""login-2016-007"", ""Timestamp"": ""2016-02-29 09:00:00 UTC"", ""Data Value"": ""IP address flagged for suspicious activity."", ""Details"": ""User accounts targeted during off-hours."", ""Status"": ""Completed""}]"
+Chat Log,"User_180 [08:05 AM]: ""Received a report about multiple failed login attempts. Need to investigate immediately."" User_215 [08:15 AM]: ""Checking logs now. It looks like attempts are from an unrecognized IP address."" User_180 [08:30 AM]: ""Lock the account temporarily until we confirm safety. User needs to be notified."" User_215 [08:45 AM]: ""Account locked. User will be notified about this incident."" User_180 [09:00 AM]: ""Send a notification to the user regarding the security measures taken."""
+Chat Keywords,"[""unauthorized access"", ""login attempts"", ""user account lockout"", ""incident response"", ""security notification""]"
+Chat Sentiment Determination,Frustration
+Event ID,148
+Distribution,Organization only
+Event Information,Unauthorized access attempt detected 
+Threat Level,Medium
+Event Attributes,"{ 'issue_type': 'unauthorized access', 'affected_users': 'user_442' }"
+close_code,Unauthorized_Access_Resolved
+resolved_by,user_215
+resolved_at,02/03/2016 11:11
+closed_at,07/03/2016 12:00
+
+Field,Value
+number,INC0000070
+incident_state,Closed
+active,FALSE
+reassignment_count,1
+reopen_count,0
+sys_mod_count,9
+made_sla,TRUE
+caller_id,Caller 3757
+opened_by,user_131
+opened_at,29/02/2016 08:11
+sys_created_by,user_062
+sys_created_at,29/02/2016 08:38
+sys_updated_by,user_908
+sys_updated_at,24/03/2016 18:40
+contact_type,Phone
+category,Cybersecurity
+subcategory,Malware Infection
+u_symptom,User reported unexpected system behavior and pop-up alerts.
+impact,2 - Medium
+urgency,2 - Medium
+priority,3 - Moderate
+assigned_to,user_031
+resolver,user_030
+knowledge,FALSE
+notify,Do Not Notify
+rfc,RFC001238
+Case ID,CASE013
+Case Title,Malware Infection Detected
+Creation Date,29/02/2016 08:11
+Description,User reported signs of malware infection affecting system performance.
+Case Tasks,"[{""Case Tasks Title"": ""Initial Malware Scan"", ""Case Task Start Date"": ""29/02/2016 08:30"", ""Case Task Assignee"": ""user_131"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{ 'scan_result': 'Malware detected.' }""}, {""Case Tasks Title"": ""Isolate Infected Device"", ""Case Task Start Date"": ""29/02/2016 09:30"", ""Case Task Assignee"": ""user_031"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{ 'device_isolated': 'User device isolated from network.' }""}, {""Case Tasks Title"": ""User Notification"", ""Case Task Start Date"": ""29/02/2016 10:00"", ""Case Task Assignee"": ""user_131"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""15 minutes"", ""Case Attribute Data"": ""{ 'notification_sent': 'User informed about the infection and next steps.' }""}]"
+Observables Analysis,"[{""Analysis Type"": ""Malware Detection Analysis"", ""Analysis ID"": ""malware-2016-012"", ""Timestamp"": ""2016-02-29 09:00:00 UTC"", ""Data Value"": ""Malware signature detected in system files."", ""Details"": ""User's device was running unverified software."", ""Status"": ""Completed""}]"
+Chat Log,"User_131 [08:11 AM]: ""We've got a report of unusual behavior on the user's system. Let’s scan it for malware."" User_030 [08:15 AM]: ""Running a full system scan. I'll check for any malicious signatures."" User_131 [09:00 AM]: ""Scan completed. Malware detected. We need to isolate the device immediately."" User_030 [09:30 AM]: ""Device isolated from the network. Preparing for user notification."" User_131 [10:00 AM]: ""Inform the user about the infection and provide them with next steps."""
+Chat Keywords,"[""malware infection"", ""system scan"", ""user notification"", ""device isolation"", ""security incident""]"
+Chat Sentiment Determination,Urgency
+Event ID,149
+Distribution,Organization only
+Event Information,Malware infection detected
+Threat Level,Medium
+Event Attributes,"{ 'issue_type': 'malware infection', 'affected_users': 'user_3757' }"
+close_code,Malware_Resolved
+resolved_by,user_031
+resolved_at,08/03/2016 09:55
+closed_at,24/03/2016 18:40
+
+Field,Value
+number,INC0000071
+incident_state,Closed
+active,FALSE
+reassignment_count,0
+reopen_count,0
+sys_mod_count,7
+made_sla,TRUE
+caller_id,Caller 271
+opened_by,user_180
+opened_at,29/02/2016 08:12
+sys_created_by,user_081
+sys_created_at,29/02/2016 08:17
+sys_updated_by,user_908
+sys_updated_at,06/03/2016 11:00
+contact_type,Phone
+category,Cybersecurity
+subcategory,Data Breach
+u_symptom,User reported unauthorized access to sensitive information.
+impact,2 - Medium
+urgency,2 - Medium
+priority,3 - Moderate
+assigned_to,user_249
+resolver,user_227
+knowledge,FALSE
+notify,Do Not Notify
+rfc,RFC001239
+Case ID,CASE014
+Case Title,Data Breach Detected
+Creation Date,29/02/2016 08:12
+Description,User reported potential unauthorized access to data on their account.
+Case Tasks,"[{""Case Tasks Title"": ""Initial Investigation"", ""Case Task Start Date"": ""29/02/2016 09:00"", ""Case Task Assignee"": ""user_180"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""1 hour"", ""Case Attribute Data"": ""{ 'investigation_result': 'Unauthorized access confirmed.' }""}, {""Case Tasks Title"": ""Notify User of Breach"", ""Case Task Start Date"": ""29/02/2016 10:30"", ""Case Task Assignee"": ""user_227"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""30 minutes"", ""Case Attribute Data"": ""{ 'notification_sent': 'User notified about the data breach.' }""}, {""Case Tasks Title"": ""Secure User Account"", ""Case Task Start Date"": ""01/03/2016 08:00"", ""Case Task Assignee"": ""user_249"", ""Case Task Status"": ""Completed"", ""Case Task Duration"": ""45 minutes"", ""Case Attribute Data"": ""{ 'account_secured': 'User account reset and secured.' }""}]"
+Observables Analysis,"[{""Analysis Type"": ""Data Access Logs Analysis"", ""Analysis ID"": ""access-2016-010"", ""Timestamp"": ""2016-02-29 09:15:00 UTC"", ""Data Value"": ""Unauthorized access detected in logs."", ""Details"": ""Access made from an unrecognized IP address."", ""Status"": ""Completed""}]"
+Chat Log,"User_180 [08:12 AM]: ""We've received a report of unauthorized access. Let's investigate the account."" User_227 [08:15 AM]: ""Checking access logs now. We need to confirm if there was a breach."" User_180 [09:00 AM]: ""Breach confirmed. User needs to be notified immediately."" User_227 [10:00 AM]: ""Notified the user about the breach and the steps taken."" User_249 [01/03/2016 08:00 AM]: ""Secured the user's account and reset their password."""
+Chat Keywords,"[""data breach"", ""unauthorized access"", ""user notification"", ""account security"", ""investigation""]"
+Chat Sentiment Determination,Frustration
+Event ID,150
+Distribution,Organization only
+Event Information,Data breach incident detected and resolved
+Threat Level,Medium
+Event Attributes,"{ 'issue_type': 'data breach', 'affected_users': 'user_271' }"
+close_code,Data_Breach_Resolved
+resolved_by,user_227
+resolved_at,01/03/2016 10:38
+closed_at,06/03/2016 11:00

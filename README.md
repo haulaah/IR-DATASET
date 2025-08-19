@@ -54,3 +54,5 @@ The dataset includes detailed records of different unique Incident Response case
 
 
 ## Paper Publication IEEE
+
+https://ieeexplore.ieee.org/document/10939563
